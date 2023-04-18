@@ -13,3 +13,11 @@ use chriskacerguis\RestServer\RestController;
 
 controller must be extend with RestController;
 every function name is name_method. _method define http method
+
+response send 
+    $this->response($data, statuscode);
+    $this->response(['Item deleted successfully.'], RestController::HTTP_OK);
+
+
+
+    
